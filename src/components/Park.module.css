@@ -1,0 +1,16 @@
+.container {
+  @apply bg-prk-teal w-screen h-screen p-16;
+}
+.sub_container {
+  @apply bg-prk-brown w-full h-full rounded-2xl shadow-lg p-5 grid grid-cols-10 gap-5;
+}
+
+.form_area {
+  @apply col-span-3;
+}
+.token_area {
+  @apply col-span-2;
+}
+.heading_font {
+  @apply font-bold text-pretty text-xl;
+}

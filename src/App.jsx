@@ -1,9 +1,5 @@
-function App() {
-  return (
-    <>
-      <div>hellow world!!!!!!!!!</div>
-    </>
-  );
-}
+import Park from "./components/Park";
 
-export default App;
+export default function App() {
+  return <Park />;
+}

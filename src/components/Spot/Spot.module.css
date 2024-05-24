@@ -1,0 +1,22 @@
+.spot_area {
+  @apply grid grid-rows-6 col-span-5;
+}
+.vehicle_select {
+  @apply row-span-2;
+}
+.spot_select {
+  @apply row-span-4 grid grid-cols-6 gap-4;
+}
+.vehicle_wrap {
+  @apply grid grid-cols-3 py-5;
+}
+.vehicle {
+  @apply w-20 rounded-xl shadow-lg overflow-hidden;
+}
+.heading_font {
+  @apply font-bold text-pretty text-xl;
+}
+.prk_space {
+  @apply font-semibold text-pretty text-lg text-slate-700
+  text-center rounded-xl bg-white content-center shadow-sm;
+}
