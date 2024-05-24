@@ -1,0 +1,18 @@
+.form_area {
+  @apply col-span-3;
+}
+.detaild_heading {
+  @apply font-bold text-pretty text-2xl pb-5;
+}
+.info_label {
+  @apply font-bold text-pretty text-lg pb-5;
+}
+.input_field {
+  @apply bg-transparent outline-0 border-b-2 border-black;
+}
+.form_area label {
+  @apply py-5 flex justify-between items-end text-lg text-gray-600;
+}
+.form_area button {
+  @apply bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-1.5 px-4 my-5 border border-gray-500 hover:border-transparent rounded-full duration-200;
+}

@@ -17,6 +17,6 @@
   @apply font-bold text-pretty text-xl;
 }
 .prk_space {
-  @apply font-semibold text-pretty text-lg text-slate-700
-  text-center rounded-xl bg-white content-center shadow-sm;
+  @apply font-semibold text-pretty text-lg text-slate-800
+  text-center rounded-xl bg-gray-100 content-center shadow-sm hover:bg-gray-400 hover:text-white duration-100 cursor-pointer;
 }
