@@ -26,7 +26,7 @@ function Spot() {
         </h3>
         {fullPark.map((space, key) => (
           <div key={key} className={styles.prk_space}>
-            {Object.entries(space).map((value) => value[0])}
+            {space.spot}
           </div>
         ))}
       </div>

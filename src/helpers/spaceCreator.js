@@ -1,14 +1,17 @@
 export function spaceCreator(num) {
-    if (num > 18) {
-      alert("There is no more space for more than 16! Defaulting to 18.");
-      num = 18;
+    const limit = 18;
+    if (num > limit) {
+      alert(
+        `The number exceeds the limit of ${limit}. Defaulting to ${limit}.`
+      );
+      num = limit;
     }
-    let array = [];
+
+    const spotsArray = [];
     for (let i = 1; i <= num; i++) {
-      let obj = {};
-      obj["A" + i] = "empty";
-      array.push(obj);
+      spotsArray.push({ spot: `A${i}`, stauts: "empty" });
     }
-    return array;
+
+    return spotsArray;
   }
 

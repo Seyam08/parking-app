@@ -8,7 +8,6 @@ export default {
     extend: {
       colors: {
         'prk-teal': '#E7F0E4',
-        'prk-brown': '#DBDBCA',
       },
     },
   },
