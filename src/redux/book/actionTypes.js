@@ -1,5 +1,4 @@
 export const VH_SELECT =  "book/vhSelect"
 export const SPOT_SELECT =  "book/spotSelect"
-export const USER_NAME =  "book/userName"
-export const USER_EMAIL =  "book/userEmail"
-export const USER_PHONE =  "book/userPhone"
+export const SET_DETAILS =  "book/setdetails"
+export const CLEAR_INFO =  "book/clearInfo"

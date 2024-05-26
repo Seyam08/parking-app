@@ -1,4 +1,4 @@
-import { SPOT_SELECT, USER_EMAIL, USER_NAME, USER_PHONE, VH_SELECT } from "./actionTypes";
+import { CLEAR_INFO, SET_DETAILS, SPOT_SELECT, VH_SELECT } from "./actionTypes";
 
 export const vhSelect=(vhType)=>{
     return{
@@ -12,21 +12,14 @@ export const spotSelect=(spotName)=>{
         payload: spotName
     }
 }
-export const nameInp=(userName)=>{
+export const inpDetails=(userDetails)=>{
     return{
-        type: USER_NAME,
-        payload: userName
+        type: SET_DETAILS,
+        payload: userDetails
     }
 }
-export const mailInp=(userEmail)=>{
+export const clearInfo =()=>{
     return{
-        type: USER_EMAIL,
-        payload: userEmail
-    }
-}
-export const phoneInp=(userPhone)=>{
-    return{
-        type: USER_PHONE,
-        payload: userPhone
+        type: CLEAR_INFO
     }
 }

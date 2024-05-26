@@ -1,7 +1,9 @@
-export const initialState = {
+export const bookState = {
     vehicleType: '',
     selectedSpot: '',
-    userName: '',
-    userEmail: '',
-    userPhone: ''
+    userDetails:{
+        userName: '',
+        userEmail: '',
+        userPhone: ''
+        }
 };
