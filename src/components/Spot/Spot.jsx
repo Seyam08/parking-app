@@ -3,9 +3,8 @@ import car from "../../assets/images/car.png";
 import { spaceCreator } from "../../helpers/spaceCreator";
 import styles from "./Spot.module.css";
 
-function Spot() {
+export default function Spot() {
   const fullPark = spaceCreator(18);
-
   return (
     <div className={styles.spot_area}>
       <div className={styles.vehicle_select}>
@@ -33,5 +32,3 @@ function Spot() {
     </div>
   );
 }
-
-export default Spot;

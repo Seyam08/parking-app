@@ -1,8 +1,8 @@
-import { DetailedForm } from "./Form/DetailedForm";
+import DetailedForm from "./Form/DetailedForm";
 import styles from "./Park.module.css";
 import Spot from "./Spot/Spot";
 
-function Park() {
+export default function Park() {
   return (
     <div className={styles.container}>
       <div className={styles.sub_container}>
@@ -13,5 +13,3 @@ function Park() {
     </div>
   );
 }
-
-export default Park;

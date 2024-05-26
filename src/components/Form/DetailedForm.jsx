@@ -1,6 +1,6 @@
 import styles from "./DetailedForm.module.css";
 
-export function DetailedForm() {
+export default function DetailedForm() {
   return (
     <div className={styles.form_area}>
       <h2 className={styles.detaild_heading}>Detaild information</h2>
