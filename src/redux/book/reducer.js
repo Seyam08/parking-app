@@ -4,15 +4,15 @@ import { initialState } from "./initialState";
 export const bookReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case VH_SELECT:
-        return console.log(type, payload);
+        return {...state, vehicleType: payload}
     case SPOT_SELECT:
-        return []
+        return {...state, selectedSpot: payload}
     case USER_NAME:
-        return []
+        return {...state, userName: payload}
     case USER_EMAIL:
-        return []
+        return {...state, userEmail: payload}
     case USER_PHONE:
-        return []
+        return {...state, userPhone: payload}
     
     default:
         return state

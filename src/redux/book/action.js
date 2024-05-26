@@ -12,19 +12,19 @@ export const spotSelect=(spotName)=>{
         payload: spotName
     }
 }
-export const userName=(userName)=>{
+export const nameInp=(userName)=>{
     return{
         type: USER_NAME,
         payload: userName
     }
 }
-export const userEmail=(userEmail)=>{
+export const mailInp=(userEmail)=>{
     return{
         type: USER_EMAIL,
         payload: userEmail
     }
 }
-export const userPhone=(userPhone)=>{
+export const phoneInp=(userPhone)=>{
     return{
         type: USER_PHONE,
         payload: userPhone

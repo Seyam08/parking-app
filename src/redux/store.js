@@ -1,7 +1,9 @@
-import { composeWithDevTools } from '@redux-devtools/extension';
-import { createStore } from 'redux';
-import rootReducer from "./rootReducer";
+import { configureStore } from '@reduxjs/toolkit';
+import { bookReducer } from './book/reducer';
 
-const store = createStore(rootReducer,composeWithDevTools());
-
-export default store;
+export default configureStore({
+  reducer: {
+    book: bookReducer,
+  },
+  devTools: true
+})

@@ -23,7 +23,8 @@
   @apply font-semibold text-pretty text-lg text-slate-800
   text-center content-center duration-100 cursor-pointer;
 }
-.prk_space:hover {
-  box-shadow: inset 6px 6px 10px #d0d8cd, inset -6px -6px 10px #fefffb;
+.prk_space:hover,
+.prk_space_select {
+  box-shadow: inset 6px 6px 10px #d0d8cd, inset -6px -6px 10px #fefffb !important;
 }
 /* rounded-xl  bg-gray-100 shadow-sm hover:bg-gray-400 hover:text-white*/

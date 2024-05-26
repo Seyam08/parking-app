@@ -9,7 +9,7 @@ export function spaceCreator(num) {
 
     const spotsArray = [];
     for (let i = 1; i <= num; i++) {
-      spotsArray.push({ spot: `A${i}`, stauts: "empty" });
+      spotsArray.push({ spot: `A${i}` });
     }
 
     return spotsArray;
