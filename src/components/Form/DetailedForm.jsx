@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearInfo, inpDetails } from "../../redux/book/action";
+import { clearInfo, inpDetails } from "../../redux/bookReducer/action";
 import styles from "./DetailedForm.module.css";
 
 export default function DetailedForm() {

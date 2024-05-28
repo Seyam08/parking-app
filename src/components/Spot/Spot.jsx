@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import bike from "../../assets/images/bike.png";
 import car from "../../assets/images/car.png";
 import { spaceCreator } from "../../helpers/spaceCreator";
-import { spotSelect, vhSelect } from "../../redux/book/action";
+import { spotSelect, vhSelect } from "../../redux/bookReducer/action";
 import styles from "./Spot.module.css";
 
 export default function Spot() {

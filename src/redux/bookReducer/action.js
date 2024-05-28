@@ -1,5 +1,5 @@
 import { CLEAR_INFO, SET_DETAILS, SPOT_SELECT, VH_SELECT } from "./actionTypes";
-
+ 
 export const vhSelect=(vhType)=>{
     return{
         type: VH_SELECT,
@@ -18,8 +18,12 @@ export const inpDetails=(userDetails)=>{
         payload: userDetails
     }
 }
+
+
 export const clearInfo =()=>{
     return{
         type: CLEAR_INFO
     }
 }
+
+

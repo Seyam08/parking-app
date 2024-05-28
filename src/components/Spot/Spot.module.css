@@ -13,6 +13,9 @@
 .vehicle {
   @apply w-20 rounded-xl shadow-lg overflow-hidden;
 }
+.vehicle label {
+  @apply cursor-pointer h-full block;
+}
 .heading_font {
   @apply font-bold text-pretty text-xl;
 }
@@ -25,6 +28,6 @@
 }
 .prk_space:hover,
 .prk_space_select {
-  box-shadow: inset 6px 6px 10px #d0d8cd, inset -6px -6px 10px #fefffb !important;
+  box-shadow: inset 6px 6px 10px #d0d8cd, inset -6px -6px 10px #fefffb;
 }
 /* rounded-xl  bg-gray-100 shadow-sm hover:bg-gray-400 hover:text-white*/
