@@ -2,17 +2,13 @@ import { CLEAR_INFO } from '../bookReducer/actionTypes';
 import { addToken } from '../tokenReducer/action';
 
 const passState = store => next => action => {
-  switch (action.type) {
-    case CLEAR_INFO:{
-      const dispatch = store.dispatch
-      const bookState = store.getState().book
-      dispatch(addToken(bookState))
-      break;
-    }
-    default:
-      break;
+    
+ if (action.type === CLEAR_INFO) {
+    const bookState = store.getState().book;
+    store.dispatch(addToken(bookState));
   }
   return next(action);
+  
 };
 
 export default passState;
