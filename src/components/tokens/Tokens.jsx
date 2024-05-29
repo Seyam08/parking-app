@@ -16,14 +16,14 @@ export default function Tokens() {
               <div>
                 <p>Token :</p>
                 <p>Selected Spot :</p>
-                <p>See details</p>
+                <p>{"Owner's name:"}</p>
                 <p>Clear Spot :</p>
               </div>
             </div>
             <div className={styles.item_desc}>
               <p>{item.id}</p>
               <p>{item.selectedSpot}</p>
-              <p>{"=>"}</p>
+              <p>{item.userDetails.userName}</p>
               <button
                 className={styles.rm_token_btn}
                 onClick={() => dispatch(removeToken(item.id))}

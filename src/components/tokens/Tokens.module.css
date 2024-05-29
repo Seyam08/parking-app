@@ -1,5 +1,5 @@
 .token_area {
-  @apply col-span-2;
+  @apply col-span-3;
 }
 .token_area_heading {
   @apply font-bold text-pretty text-2xl pb-5;
