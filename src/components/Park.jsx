@@ -1,6 +1,7 @@
 import DetailedForm from "./Form/DetailedForm";
 import styles from "./Park.module.css";
 import Spot from "./Spot/Spot";
+import Tokens from "./tokens/Tokens";
 
 export default function Park() {
   return (
@@ -8,7 +9,7 @@ export default function Park() {
       <div className={styles.sub_container}>
         <Spot />
         <DetailedForm />
-        <div className={styles.token_area}>3</div>
+        <Tokens />
       </div>
     </div>
   );

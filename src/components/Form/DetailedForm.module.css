@@ -8,7 +8,7 @@
   @apply font-bold text-pretty text-lg pb-5;
 }
 .input_field {
-  @apply bg-transparent outline-0 border-b-2 border-black;
+  @apply bg-transparent outline-0 border-b-2 border-gray-500;
 }
 .form_area label {
   @apply py-5 flex justify-between items-end text-lg text-gray-600;
