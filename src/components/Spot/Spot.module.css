@@ -1,5 +1,5 @@
 .spot_area {
-  @apply grid grid-rows-6 col-span-4;
+  @apply grid grid-rows-6 lg:col-span-4 md:col-span-10 col-span-10;
 }
 .vehicle_select {
   @apply row-span-2;
