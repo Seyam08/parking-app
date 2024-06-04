@@ -17,12 +17,12 @@
   @apply cursor-pointer h-full block;
 }
 .heading_font {
-  @apply font-bold text-pretty text-xl text-prk-text-clr;
+  @apply font-bold text-xl text-prk-text-clr;
 }
 .prk_space {
   border-radius: 20px;
   box-shadow: 3px 4px 5px #ffea9e, 1px 2px 5px #ffc700;
-  @apply bg-prk-btn-clr font-semibold text-pretty text-lg text-prk-bg
+  @apply bg-prk-btn-clr font-semibold text-lg text-prk-bg
   text-center content-center duration-100 cursor-pointer;
 }
 .prk_space:hover,
