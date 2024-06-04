@@ -4,7 +4,7 @@ A web application for reserving parking spots. It has several features, includin
 
 ## Live preview
 
-http://localhost:5173/
+[parkreserve.com](https://parkreserve.netlify.app/)
 
 ## Features
 
