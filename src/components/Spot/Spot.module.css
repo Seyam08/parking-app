@@ -17,17 +17,17 @@
   @apply cursor-pointer h-full block;
 }
 .heading_font {
-  @apply font-bold text-pretty text-xl;
+  @apply font-bold text-pretty text-xl text-prk-text-clr;
 }
 .prk_space {
   border-radius: 20px;
-  background: #e7f0e4;
-  box-shadow: 7px 7px 14px #c4ccc2, -7px -7px 14px #ffffff;
-  @apply font-semibold text-pretty text-lg text-slate-800
+  box-shadow: 3px 4px 5px #ffea9e, 1px 2px 5px #ffc700;
+  @apply bg-prk-btn-clr font-semibold text-pretty text-lg text-prk-bg
   text-center content-center duration-100 cursor-pointer;
 }
 .prk_space:hover,
 .prk_space_select {
-  box-shadow: inset 6px 6px 10px #d0d8cd, inset -6px -6px 10px #fefffb;
+  box-shadow: 7px 7px 14px #c4ccc2, -7px -7px 14px #ffffff;
+  @apply bg-prk-text-clr text-prk-fg;
 }
 /* rounded-xl  bg-gray-100 shadow-sm hover:bg-gray-400 hover:text-white*/

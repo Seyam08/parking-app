@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'prk-teal': '#E7F0E4',
+        'prk-bg': '#F0F2F1',
+        'prk-fg': '#FFFFFF',
+        'prk-text-clr': '#2D3652',
+        'prk-btn-clr': '#FFC700',
       },
     },
   },

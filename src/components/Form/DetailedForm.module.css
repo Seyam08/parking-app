@@ -2,17 +2,22 @@
   @apply lg:col-span-3 md:col-span-5 col-span-10;
 }
 .detaild_heading {
-  @apply font-bold text-pretty text-2xl pb-5;
+  @apply font-bold text-pretty text-2xl pb-5 text-prk-text-clr;
 }
 .info_label {
-  @apply font-bold text-pretty text-lg pb-5;
+  @apply font-bold text-pretty text-lg pb-5 text-prk-text-clr;
 }
 .input_field {
-  @apply bg-transparent outline-0 border-b-2 border-gray-500;
+  @apply bg-transparent outline-0 border-b-2 border-prk-text-clr;
 }
 .form_area label {
-  @apply py-5 flex justify-between items-end text-lg text-gray-600;
+  @apply py-5 flex justify-between items-end text-lg text-prk-text-clr;
 }
 .form_area button {
-  @apply bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-1.5 px-4 my-5 border border-gray-500 hover:border-transparent rounded-full duration-200;
+  box-shadow: 3px 4px 5px #ffea9e, 1px 2px 5px #ffc700;
+  @apply bg-prk-btn-clr  text-prk-fg font-semibold py-1.5 px-4 my-5 border border-prk-btn-clr rounded-full duration-200;
+}
+.form_area button:hover {
+  box-shadow: 3px 4px 5px #444e6e, 1px 2px 5px #2d3652;
+  @apply bg-prk-text-clr border-prk-text-clr;
 }
