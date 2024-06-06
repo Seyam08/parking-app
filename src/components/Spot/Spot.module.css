@@ -5,7 +5,7 @@
   @apply row-span-2;
 }
 .spot_select {
-  @apply row-span-4 grid grid-cols-6 gap-4;
+  @apply row-span-4 grid grid-cols-6 lg:gap-4 md:gap-2 gap-1;
 }
 .vehicle_wrap {
   @apply grid grid-cols-3 py-5;
@@ -22,7 +22,7 @@
 .prk_space {
   border-radius: 20px;
   box-shadow: 3px 4px 5px #ffea9e, 1px 2px 5px #ffc700;
-  @apply bg-prk-btn-clr font-semibold text-lg text-prk-bg
+  @apply bg-prk-btn-clr font-semibold md:text-lg text-sm text-prk-text-clr
   text-center content-center duration-100 cursor-pointer;
 }
 .prk_space:hover,

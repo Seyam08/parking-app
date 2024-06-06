@@ -11,7 +11,10 @@
   @apply bg-transparent outline-0 border-b-2 border-prk-text-clr;
 }
 .form_area label {
-  @apply py-5 flex justify-between items-end text-lg text-prk-text-clr;
+  @apply py-5 md:flex gap-2 block justify-between items-end text-lg text-prk-text-clr;
+}
+.form_area label input {
+  @apply block w-full md:w-auto;
 }
 .form_area button {
   box-shadow: 3px 4px 5px #ffea9e, 1px 2px 5px #ffc700;
