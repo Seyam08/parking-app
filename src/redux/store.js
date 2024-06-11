@@ -10,5 +10,5 @@ export default configureStore({
     token: tokenReducer
   },
   devTools: true,
-  middleware: ()=>[passState]
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(passState),
 })
