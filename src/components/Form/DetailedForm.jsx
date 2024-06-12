@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { emailValidation } from "../../helpers/emailValidation";
 import { clearInfo, inpDetails } from "../../redux/bookReducer/action";
 import styles from "./DetailedForm.module.css";
 
@@ -21,17 +22,22 @@ export default function DetailedForm() {
       details.userEmail &&
       details.userPhone
     ) {
-      dispatch(inpDetails(details));
-      setDetails({
-        userName: "",
-        userEmail: "",
-        userPhone: "",
-      });
-      dispatch(clearInfo());
+      if (emailValidation(details.userEmail)) {
+        dispatch(inpDetails(details));
+        setDetails({
+          userName: "",
+          userEmail: "",
+          userPhone: "",
+        });
+        dispatch(clearInfo());
+      } else {
+        alert("Please enter a valid email!");
+      }
     } else {
       alert("Please select and fillup all of option!");
     }
   };
+
   return (
     <div className={styles.form_area}>
       <h2 className={styles.detaild_heading}>Detaild information</h2>
