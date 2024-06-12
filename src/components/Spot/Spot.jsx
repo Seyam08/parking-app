@@ -7,6 +7,7 @@ import styles from "./Spot.module.css";
 
 export default function Spot() {
   const fullPark = spaceCreator(18);
+  const token = useSelector((state) => state.token);
   const book = useSelector((state) => state.book);
   const { vehicleType, selectedSpot } = book;
   const dispatch = useDispatch();
@@ -17,6 +18,9 @@ export default function Spot() {
   const handelSpot = (spot) => {
     dispatch(spotSelect(spot));
   };
+
+  const bookedSpot = token.map((token) => token.selectedSpot);
+
   return (
     <div className={styles.spot_area}>
       <div className={styles.vehicle_select}>
@@ -65,16 +69,22 @@ export default function Spot() {
         <h3 className={`${styles.heading_font} col-span-6`}>
           Choose parking spot:
         </h3>
+
         {fullPark.map((space, key) => (
-          <div
+          <button
             key={key}
             className={`${styles.prk_space} ${
-              space.spot === selectedSpot ? styles.prk_space_select : ""
+              space.spot === selectedSpot
+                ? styles.prk_space_select
+                : bookedSpot.includes(space.spot)
+                ? `${styles.prk_space_select} cursor-not-allowed opacity-50`
+                : ""
             }`}
             onClick={() => handelSpot(space.spot)}
+            disabled={bookedSpot.includes(space.spot)}
           >
             {space.spot}
-          </div>
+          </button>
         ))}
       </div>
     </div>
