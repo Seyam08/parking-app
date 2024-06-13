@@ -13,7 +13,6 @@ function TokenDetailsComponent({ open, setOpenModal, item }) {
   const dispatch = useDispatch();
   const { id, vehicleType, selectedSpot, userDetails } = item;
 
-  console.log(`${selectedSpot} rendering`);
   return (
     <Transition show={open}>
       <Dialog className="relative z-10" onClose={setOpenModal}>
