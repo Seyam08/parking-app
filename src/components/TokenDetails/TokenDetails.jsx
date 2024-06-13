@@ -4,9 +4,13 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
+import { useDispatch } from "react-redux";
+import { removeToken } from "../../redux/tokenReducer/action";
 import styles from "./TokenDetails.module.css";
 
 export default function TokenDetails({ open, setOpenModal, item }) {
+  const dispatch = useDispatch();
+
   const { id, vehicleType, selectedSpot, userDetails } = item;
   return (
     <Transition show={open}>
@@ -63,7 +67,10 @@ export default function TokenDetails({ open, setOpenModal, item }) {
                   <button
                     type="button"
                     className={styles.modalBtnFrist}
-                    onClick={() => setOpenModal(false)}
+                    onClick={() => {
+                      dispatch(removeToken(id));
+                      setOpenModal(false);
+                    }}
                     data-autofocus
                   >
                     Clear spot
