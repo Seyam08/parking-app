@@ -9,10 +9,6 @@ export default function Tokens() {
   const dispatch = useDispatch();
   const [openModal, setOpenModal] = useState("");
 
-  const showDetails = (id) => {
-    setOpenModal(id);
-  };
-
   return (
     <div className={styles.token_area}>
       <h2 className={styles.token_area_heading}>All Tokens</h2>
@@ -50,7 +46,7 @@ export default function Tokens() {
               <div className={styles.item_desc}>
                 <button
                   className={styles.token_btn}
-                  onClick={() => showDetails(item.id)}
+                  onClick={() => setOpenModal(item.id)}
                 >
                   {"=>"}
                 </button>
