@@ -13,6 +13,8 @@ A web application for reserving parking spots. It has several features, includin
 - Details information about reserver
 - A token will be generated when the user clicks the 'Get Token' button
 - Token list will be available on the left side of panel, also token can be removed.
+- Already booked spot marked.
+- Token details will shown in a popup screen
 
 ## Installation
 
