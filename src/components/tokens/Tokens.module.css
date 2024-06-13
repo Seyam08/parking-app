@@ -17,23 +17,19 @@
   @apply w-2;
 }
 .token_list_item {
-  @apply flex justify-between gap-x-6 py-3 border-b-2 border-gray-500;
+  @apply border-b-2 border-gray-500 py-2;
+}
+
+.item_info {
+  @apply flex justify-between gap-x-6 py-0.5;
 }
 .item_title {
-  @apply flex min-w-0 gap-x-4;
-}
-.item_title > div {
-  @apply min-w-0 flex-auto;
-}
-.item_title > div p {
-  @apply text-sm font-semibold leading-6 text-prk-text-clr;
+  @apply text-base font-semibold leading-6 text-prk-text-clr;
 }
 .item_desc {
-  @apply shrink-0 sm:flex sm:flex-col sm:items-end;
+  @apply text-sm  leading-6 text-prk-text-clr;
 }
-.item_desc p {
-  @apply text-sm leading-6 text-prk-text-clr;
-}
-.rm_token_btn {
+
+.token_btn {
   @apply text-sm bg-prk-btn-clr text-white font-semibold hover:bg-transparent hover:text-prk-btn-clr py-0.5 px-4 border-2 hover:border-prk-btn-clr border-transparent rounded-full duration-200;
 }

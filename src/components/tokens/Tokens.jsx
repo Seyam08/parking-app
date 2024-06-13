@@ -15,32 +15,57 @@ export default function Tokens() {
       <ul className={styles.token_list}>
         {tokenState.map((item, index) => (
           <li className={styles.token_list_item} key={index}>
-            <div className={styles.item_title}>
-              <div>
+            <div className={styles.item_info}>
+              <div className={styles.item_title}>
                 <p>Token :</p>
-                <p>Selected Spot :</p>
-                <p>{"Owner's name:"}</p>
-                <p>Details :</p>
-                <p>Clear Spot :</p>
+              </div>
+              <div className={styles.item_desc}>
+                <p>{item.id}</p>
               </div>
             </div>
-            <div className={styles.item_desc}>
-              <p>{item.id}</p>
-              <p>{item.selectedSpot}</p>
-              <p>{item.userDetails.userName}</p>
-              <button
-                className={styles.rm_token_btn}
-                onClick={() => setOpenModal(item.id)}
-              >
-                {"=>"}
-              </button>
-              <button
-                className={styles.rm_token_btn}
-                onClick={() => dispatch(removeToken(item.id))}
-              >
-                x
-              </button>
+            <div className={styles.item_info}>
+              <div className={styles.item_title}>
+                <p>Selected Spot :</p>
+              </div>
+              <div className={styles.item_desc}>
+                <p>{item.selectedSpot}</p>
+              </div>
             </div>
+            <div className={styles.item_info}>
+              <div className={styles.item_title}>
+                <p>{"Owner's name:"}</p>
+              </div>
+              <div className={styles.item_desc}>
+                <p>{item.userDetails.userName}</p>
+              </div>
+            </div>
+            <div className={styles.item_info}>
+              <div className={styles.item_title}>
+                <p>Details :</p>
+              </div>
+              <div className={styles.item_desc}>
+                <button
+                  className={styles.token_btn}
+                  onClick={() => setOpenModal(item.id)}
+                >
+                  {"=>"}
+                </button>
+              </div>
+            </div>
+            <div className={styles.item_info}>
+              <div className={styles.item_title}>
+                <p>Clear Spot :</p>
+              </div>
+              <div className={styles.item_desc}>
+                <button
+                  className={styles.token_btn}
+                  onClick={() => dispatch(removeToken(item.id))}
+                >
+                  x
+                </button>
+              </div>
+            </div>
+
             <TokenDetails
               open={openModal === item.id}
               setOpenModal={setOpenModal}
