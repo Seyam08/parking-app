@@ -4,14 +4,16 @@ import {
   Transition,
   TransitionChild,
 } from "@headlessui/react";
+import { memo } from "react";
 import { useDispatch } from "react-redux";
 import { removeToken } from "../../redux/tokenReducer/action";
 import styles from "./TokenDetails.module.css";
 
-export default function TokenDetails({ open, setOpenModal, item }) {
+function TokenDetailsComponent({ open, setOpenModal, item }) {
   const dispatch = useDispatch();
-
   const { id, vehicleType, selectedSpot, userDetails } = item;
+
+  console.log(`${selectedSpot} rendering`);
   return (
     <Transition show={open}>
       <Dialog className="relative z-10" onClose={setOpenModal}>
@@ -91,3 +93,5 @@ export default function TokenDetails({ open, setOpenModal, item }) {
     </Transition>
   );
 }
+const TokenDetails = memo(TokenDetailsComponent);
+export default TokenDetails;

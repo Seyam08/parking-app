@@ -7,7 +7,11 @@ import styles from "./Tokens.module.css";
 export default function Tokens() {
   const tokenState = useSelector((state) => state.token);
   const dispatch = useDispatch();
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState("");
+
+  const showDetails = (id) => {
+    setOpenModal(id);
+  };
 
   return (
     <div className={styles.token_area}>
@@ -46,7 +50,7 @@ export default function Tokens() {
               <div className={styles.item_desc}>
                 <button
                   className={styles.token_btn}
-                  onClick={() => setOpenModal(item.id)}
+                  onClick={() => showDetails(item.id)}
                 >
                   {"=>"}
                 </button>
