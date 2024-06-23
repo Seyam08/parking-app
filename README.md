@@ -1,4 +1,4 @@
-# Park Booking App
+# Parking Reserve App
 
 A web application for reserving parking spots. It has several features, including vehicle type selection, spot choosing, and detailed information about the owner. Based on this information, the app generates a token that serves as the identifier for the booking. The app also includes a token removal option for discharging vehicles.
 
