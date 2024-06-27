@@ -64,6 +64,10 @@ To deploy this project run
 - [Tailwind CSS](https://tailwindcss.com/) A utility-first CSS framework
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/Seyam08/parking-app/main/park-reserve.PNG)
+
 ## Authors
 
 - [Seyam Hossain](https://www.github.com/Seyam08)
